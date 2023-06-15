@@ -4,6 +4,20 @@
     font-size: 3vw;
   }
 
+  .application {
+    margin: 0 auto;
+  }
+
+  form {
+    margin: 0 auto;
+  }
+
+  .contact {
+    border-top-left-radius: 10%;
+  }
+
+
+
 }
 
 @media only screen and (min-width: 767px) {

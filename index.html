@@ -8,7 +8,7 @@
   <title>Portfolio</title>
 </head>
 <body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top"  id="navbar-example2">
     <div class="container-fluid">
       <a class="navbar-brand ms-5 text-primary" href="#">My Logo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,20 +17,20 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+            <a class="nav-link active" aria-current="page" href="#Portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">About</a>
+            <a class="nav-link active" href="#Aboutme">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Contact</a>
+            <a class="nav-link active" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="container-fluid py-5 ps-5 Headline bg-white">
+  <section class="container-fluid py-5 ps-5 Headline bg-white" id="Portfolio">
     <div class="row ms-5 my-5 ps-5">
       <div class="col-12">
         <h1 class="h1 fw-bolder">I’m Alexandra. <br>
@@ -42,7 +42,7 @@
           If you like what you see and have a project you need coded, don’t 
           hesitate to contact me.
         </p>
-        <a class="fs-3" href="#">Let's Connect</a>
+        <a class="fs-3 text-decoration-none" href="#">Let's Connect</a>
         <ul class="list-unstyled d-flex gap-3 mt-3">
           <li><a href="#"><img src="Works-Images/Twitter dark.png"></a></li>
           <li><a href="#"><img src="Works-Images/Linkedin dark.png"></a></li>
@@ -84,30 +84,49 @@
 
     <!--Download and Add The correct Images from the Template to the Image Elements-->
     <section class="container bg-white mt-5 border border-primary rounded">
-      <div class="card">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <div class="card-body">
-              <h5 class="card-title fw-bolder fs-2">Multi-Post Stories</h5>
-              <ul class="d-flex gap-5 ps-0">
-                <li class="list-unstyled fw-bold">FACEBOOK</li>
-                <li class="text-secondary">Back End Dev</li>
-                <li class="text-secondary">2015</li>
-              </ul>
-              <p>Experimental content creation feature that allows users to add to an existing 
-                story over the course of a day without spamming their friends.
-              </p>
-              <ul class="d-flex list-unstyled gap-3">
-                <li class="badge rounded-pill bg-light text-primary"><a href="#" class="text-decoration-none">html</a></li>
-                <li class="badge rounded-pill bg-light text-primary"><a href="#" class="text-decoration-none">Ruby on rails</a></li>
-                <li class="badge rounded-pill bg-light text-primary"><a href="#" class="text-decoration-none">css</a></li>
-                <li class="badge rounded-pill bg-light text-primary "><a href="#" class="text-decoration-none">JavaScript</a></li>
-              </ul>
-              <button class="btn text-primary border border-primary">See Project</button>
+      <a class="text-decoration-none text-black" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <div class="card">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder fs-2">Multi-Post Stories</h5>
+                <ul class="d-flex gap-5 ps-0">
+                  <li class="list-unstyled fw-bold">FACEBOOK</li>
+                  <li class="text-secondary">Back End Dev</li>
+                  <li class="text-secondary">2015</li>
+                </ul>
+                <p>Experimental content creation feature that allows users to add to an existing 
+                  story over the course of a day without spamming their friends.
+                </p>
+                <ul class="d-flex list-unstyled gap-3">
+                  <li class="badge rounded-pill bg-light text-primary"><a href="#" class="text-decoration-none">html</a></li>
+                  <li class="badge rounded-pill bg-light text-primary"><a href="#" class="text-decoration-none">Ruby on rails</a></li>
+                  <li class="badge rounded-pill bg-light text-primary"><a href="#" class="text-decoration-none">css</a></li>
+                  <li class="badge rounded-pill bg-light text-primary "><a href="#" class="text-decoration-none">JavaScript</a></li>
+                </ul>
+                <button class="btn text-primary border border-primary">See Project</button>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <img src="Assets/Snapshoot Portfolio2.png" class="card-img-top img-fluid" alt="...">
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <img src="Assets/Snapshoot Portfolio2.png" class="card-img-top img-fluid" alt="...">
+        </div>
+      </a>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
           </div>
         </div>
       </div>
@@ -172,12 +191,95 @@
       </div>
     </section>
 
-  <section class="container-fluid bg-white mt-5 pt-5 ps-sm-2 ps-md-5 ps-lg-5 ps-xl-5">
+  <section class="container-fluid bg-white mt-5 pt-5 ps-5" id="Aboutme">
     <div class="row pt-5">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ps-5">
         <h1 class="fw-bolder h1">About Myself</h1>
+        <p>Hello I’m a software developer! I can help you build a product , 
+          feature or website Look through some of my work and experience! If
+           you like what you see and have a project you need coded, don’t hesitate 
+           to contact me.
+        </p>
+        <a class="fs-3 text-decoration-none" href="#">Let's Connect</a>
+        <ul class="list-unstyled d-flex gap-3 mt-3">
+          <li><a href="#"><img src="Works-Images/Twitter dark.png"></a></li>
+          <li><a href="#"><img src="Works-Images/Linkedin dark.png"></a></li>
+          <li><a href="#"><img src="Works-Images/M dark.png"></a></li>
+          <li><a href="#"><img src="Works-Images/Peace dark.png"></a></li>
+        </ul>
+        <button class="btn border-primary text-primary">Get my resume</button>
       </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Languages
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled d-flex gap-3 mt-3">
+                  <!--Add the rest of the Images for when the accordion is opened-->
+                  <li><a href="#"><img src="Assets/Frame 9.png"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Frameworks
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <!--Add Images for when the accordion is opened-->
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Skills
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <!--Add Images for when the accordion is opened-->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 bg-primary text-center mt-5 px-5 py-5 contact" id="contact">
+        <h1 class="h1 fw-bold fs-3 text-white">Contact me</h1>
+        <p class="text-white w-50  application my-3">If you have an application you are interested in developing, 
+          a feature that you need built or a project that needs coding.
+          I’d love to help with it!
+        </p>
+
+        <form class="w-50">
+          <div class="mb-3">
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control">
+          </div>
+          <div class="mb-3">
+            <textarea class="w-100" rows="5" placeholder="Write your message here"></textarea>
+          </div>
+          <button type="submit" class="btn bg-white">Submit</button>
+        </form>
+      </div>
+
     </div>
   </section>
 
