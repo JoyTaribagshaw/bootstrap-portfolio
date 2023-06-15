@@ -14,7 +14,17 @@
 
   .contact {
     border-top-left-radius: 10%;
+    background-image: url('Assets/contact\ form\ shapes-mobile@2x.png');
+    background-size: cover;
   }
+
+  .Headline {
+    background-image: url('Assets/header-shapes-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
 
 
 
@@ -28,6 +38,15 @@
 
   .Headline {
     border-bottom-left-radius: 10%;
+    background-image: url('Assets/Header-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+
+  .contact {
+    background-image: url('Assets/contact\ form\ background\ shapes@2x.png');
+    background-size: cover;
+  }
+
   
 }
